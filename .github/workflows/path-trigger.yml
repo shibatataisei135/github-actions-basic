@@ -1,9 +1,9 @@
 name: Path Trigger Workflow
-on: [workflow_dispatch]
-#  push:
-#    branches:
-#      - main       # mainブランチにPushされた時のみ対象
-#    paths:
+on:
+  push:
+    branches:
+      - main       # mainブランチにPushされた時のみ対象
+    paths:
       - 'src/**'   #  srcディレクトリ配下に変更があった時のみ起動する
 
 jobs:
